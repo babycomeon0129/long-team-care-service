@@ -1,11 +1,18 @@
 <template>
     <div class="p-home">
-		The Home
+		<TheHeader />
+		<TheKv />
     </div>
 </template>
 
-<style lang="scss" scoped>
+<script setup>
+import TheHeader from '@/components/TheHeader.vue';
+import TheKv from '@/components/TheKv.vue';
 
+</script>
+
+
+<style lang="scss" scoped>
 .p-home {
 	font-size: 2rem;
 }

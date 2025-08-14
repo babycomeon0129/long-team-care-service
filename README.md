@@ -1,6 +1,6 @@
 # long-team-care-service
 
-This template should help get you started developing with Vue 3 in Vite.
+長照司 2.0 切版
 
 ## Recommended IDE Setup
 
@@ -9,6 +9,10 @@ This template should help get you started developing with Vue 3 in Vite.
 ## Customize configuration
 
 See [Vite Configuration Reference](https://vite.dev/config/).
+
+## node version
+
+v22
 
 ## Project Setup
 
@@ -33,3 +37,7 @@ npm run build
 ```sh
 npm run lint
 ```
+
+## figma
+
+[Figma](https://www.figma.com/design/irN6QgfleXka7APeBssk46/%E9%95%B7%E7%85%A7%E5%8F%B8_%E5%88%87%E7%89%88?node-id=201-34&p=f&t=FiS6sisQar8FTbxp-0)
