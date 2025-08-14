@@ -1,11 +1,12 @@
-import { fileURLToPath, URL } from 'node:url'
-import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import vueDevTools from 'vite-plugin-vue-devtools'
+import { fileURLToPath, URL } from 'node:url';
+import { createSvgIconsPlugin } from 'vite-plugin-svg-icons';
+import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
+import vueDevTools from 'vite-plugin-vue-devtools';
 
 // https://vite.dev/config/
 export default defineConfig({
+	base: '/long-team-care-service/',
 	plugins: [
 		vue(),
 		vueDevTools(),
@@ -22,4 +23,4 @@ export default defineConfig({
 			'@components': fileURLToPath(new URL('./src/components', import.meta.url)),
 		},
 	},
-})
+});
