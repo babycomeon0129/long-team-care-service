@@ -21,6 +21,7 @@ export default defineConfig({
 			'@img': fileURLToPath(new URL('./src/assets/images', import.meta.url)),
 			'@style': fileURLToPath(new URL('./src/styles', import.meta.url)),
 			'@components': fileURLToPath(new URL('./src/components', import.meta.url)),
+			'@view': fileURLToPath(new URL('./src/view', import.meta.url)),
 		},
 	},
 });

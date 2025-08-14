@@ -171,7 +171,7 @@ header {
 			width: calc(100% - 48px);
 			height: 2px;
 			border-radius: 10px;
-			background-color: #CADEDF;
+			background-color: var(--color-green);
 			transform: scaleX(0);
 			transform-origin: left center;
 			transition: transform .3s ease; /* 只動 transform，順暢 */
