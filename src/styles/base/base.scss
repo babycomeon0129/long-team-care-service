@@ -17,12 +17,6 @@ body {
 	font-size: 10px;
 }
 
-#app {
-	font-family: Avenir, Helvetica, Arial, sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
 * {
 	box-sizing: border-box;
 }
@@ -69,4 +63,9 @@ li {
 	@media (max-width: 767px) {
 		display: block;
 	}
+}
+
+.rwdimg {
+	width: 100%;
+	height: auto;
 }
