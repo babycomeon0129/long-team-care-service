@@ -2,26 +2,34 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-  branches:
-    - master # 只要 push 到 master 分支就會自動部署
+    branches:
+      - master # push 到 master 就部署
+
+permissions:
+  contents: write # gh-pages action 需要能 push
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Use Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: 'npm'
 
-      - name: Install dependencies
-        run: npm install
+      - name: Install
+        run: npm ci
 
-      - name: Build project
+      - name: Build
         run: npm run build
 
       - name: Deploy to GitHub Pages
@@ -30,3 +38,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           force_orphan: true
+          # publish_branch: gh-pages   # 預設就是 gh-pages，不用特別設
