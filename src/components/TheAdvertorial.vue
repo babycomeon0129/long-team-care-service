@@ -1,10 +1,11 @@
 <template>
 	<section class="advertorial">
 		<div class="advertorial__container container" data-aos="fade-up">
-			<div class="advertorial__title">
-				<h1><span>照顧現場</span><br />預見安心變老</h1>
-				<h2>LTCS LIVE</h2>
-			</div>
+			<TheTitle
+				preTitle="照顧現場"
+				title="預見安心變老"
+				subTitle="LTCS LIVE"
+			/>
 			<div class="advertorial__slide">
 				<swiper
 					:modules="modules"
@@ -55,14 +56,13 @@
 
 <script setup>
 import { Swiper, SwiperSlide } from 'swiper/vue';
+import TheTitle from './common/TheTitle.vue';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-
 const modules = [Navigation, Pagination, Autoplay];
-
 const slideList = [
 	{
 		id:'slide-1',
@@ -99,79 +99,6 @@ const imgSrc = (imgName) => {
 
 	@include mobile {
 		padding: 56px 0 56px 24px;
-	}
-}
-
-.advertorial__title {
-	position: relative;
-	margin-left: 180px;
-	color: var(--color-deep-green);
-
-	@include pc-small {
-		margin-left: 130px;
-	}
-
-	@include mobile {
-		margin-left: 0;
-	}
-
-	> h1 {
-		margin: 0 0 16px 0;
-		font-size: 4rem;
-		font-weight: bold;
-		line-height: 1.3;
-		letter-spacing: .2em;
-
-		@include mobile {
-			font-size: 3.2rem;
-		}
-
-		span {
-			color: #333;
-		}
-	}
-
-	> h2 {
-		position: absolute;
-		top: 46px;
-		left: -82px;
-		margin: 0;
-		font-family: 'Lato';
-		font-size: 1.4rem;
-		font-weight: 700;
-		line-height: 1;
-		letter-spacing: .22em;
-		white-space: nowrap;
-		transform: rotate(90deg);
-
-		@include mobile {
-			position: static;
-			margin: 0 0 24px 0;
-			font-size: 1.2rem;
-			transform: rotate(0);
-		}
-
-		&::before {
-			content: '';
-			position: absolute;
-			bottom: -8px;
-			left: 0;
-			display: block;
-			width: 11px;
-			height: 1px;
-			background-color: var(--color-orange);
-		}
-
-		&::after {
-			content: '';
-			position: absolute;
-			bottom: -8px;
-			left: 15px;
-			display: block;
-			width: 4px;
-			height: 1px;
-			background-color: var(--color-orange);
-		}
 	}
 }
 
