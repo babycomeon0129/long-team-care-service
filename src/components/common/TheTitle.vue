@@ -6,7 +6,7 @@
 </template>
 
 <script setup>
-const { preTitle, title, subTitle} = defineProps(['preTitle', 'title', 'subTitle']);
+const { preTitle, title, subTitle } = defineProps(['preTitle', 'title', 'subTitle']);
 </script>
 
 <style lang="scss" scoped>
@@ -44,8 +44,8 @@ const { preTitle, title, subTitle} = defineProps(['preTitle', 'title', 'subTitle
 
 	> h2 {
 		position: absolute;
-		top: 46px;
-		left: -82px;
+		top: 0;
+		left: 0;
 		margin: 0;
 		font-family: 'Lato';
 		font-size: 1.4rem;
@@ -53,13 +53,14 @@ const { preTitle, title, subTitle} = defineProps(['preTitle', 'title', 'subTitle
 		line-height: 1;
 		letter-spacing: .22em;
 		white-space: nowrap;
-		transform: rotate(90deg);
+		transform: translate(-24px, 8px) rotate(90deg);
+		transform-origin: top left;
 
 		@include mobile {
 			position: static;
 			margin: 0 0 24px 0;
 			font-size: 1.2rem;
-			transform: rotate(0);
+			transform: translate(0, 0) rotate(0);
 		}
 
 		&::before {
