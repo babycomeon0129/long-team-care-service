@@ -26,14 +26,19 @@
 				data-aos="fade-right"
 			/>
 		</div>
-		<img src="@img/icon--scroll.png" class="kv__scroll for-pc" />
+		<img
+			src="@img/icon--scroll.png"
+			@click="scrollToBlock('directions')"
+			class="kv__scroll for-pc"
+		/>
 	</section>
 </template>
 
 <script setup lang="ts">
-import { useMediaQuery } from '@vueuse/core'
+import { inject } from 'vue';
+import { scrollToBlock } from '@utils/common';
 
-const isMobile = useMediaQuery('(max-width: 767px)')
+const isMobile = inject('isMobile', false);
 </script>
 
 <style lang="scss" scoped>
@@ -46,7 +51,7 @@ const isMobile = useMediaQuery('(max-width: 767px)')
 	background-size: cover;
 	background-repeat: no-repeat;
 
-	@media (max-width: 767px) {
+	@include mobile {
 		background-image: url(@img/KV-mobile.png);
 	}
 }
@@ -57,12 +62,12 @@ const isMobile = useMediaQuery('(max-width: 767px)')
 	right: 6%;
 	width: 594px;
 
-	@media (max-width: 1280px) {
+	@include pc-small {
 		right: 2%;
 		width: 50%;
 	}
 
-	@media (max-width: 767px) {
+	@include mobile {
 		top: auto;
 		bottom: 64px;
 		right: 24px;
@@ -75,13 +80,13 @@ const isMobile = useMediaQuery('(max-width: 767px)')
 	top: 97px;
 	left: 30px;
 
-	@media (max-width: 1280px) {
+	@include pc-small {
 		top: 42%;
         left: 5%;
 		width: 50%;
 	}
 
-	@media (max-width: 767px) {
+	@include mobile {
 		top: 51%;
         left: 6%;
 		width: 72%;

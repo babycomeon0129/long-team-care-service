@@ -42,11 +42,11 @@ header {
 	font-size: 1.6rem;
 	background-color: rgba($color: #fff, $alpha: .8);
 
-	@media (max-width: 991px) {
+	@include tablet {
 		padding: 16px 12px;
 	}
 
-	@media (max-width: 767px) {
+	@include mobile {
 		padding: 12px;
 	}
 }
@@ -55,7 +55,7 @@ header {
 	width: 282px;
 	height: auto;
 
-	@media (max-width: 767px) {
+	@include mobile {
 		width: 212px;
 	}
 }
@@ -64,7 +64,7 @@ header {
 	display: flex;
 	align-items: center;
 
-	@media (max-width: 767px) {
+	@include mobile {
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -114,7 +114,7 @@ header {
 		transition: .3s color;
 		cursor: pointer;
 
-		@media (max-width: 767px) {
+		@include mobile {
 			display: list-item;
 			width: 243px;
 			padding: 24px 0;
@@ -128,7 +128,7 @@ header {
 			span {
 				transform: scaleX(1);
 
-				@media (max-width: 767px) {
+				@include mobile {
 					transform: scaleX(0);
 				}
 			}
@@ -137,7 +137,7 @@ header {
 		&:last-child {
 			padding: 0 0 0 24px;
 
-			@media (max-width: 767px) {
+			@include mobile {
 				padding: 24px 0;
 			}
 
@@ -156,7 +156,7 @@ header {
 			height: 12px;
 			background-color: #E4E4E4;
 
-			@media (max-width: 767px) {
+			@include mobile {
 				top: auto;
 				bottom: 0;
 				width: 100%;
@@ -207,7 +207,4 @@ header {
 	}
 }
 
-.header__burger {
-
-}
 </style>

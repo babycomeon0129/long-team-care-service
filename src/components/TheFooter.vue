@@ -16,7 +16,7 @@ footer {
 	color: #707070;
 	background-color: #fff;
 
-	@media (max-width: 767px) {
+	@include mobile {
 		padding: 15px 15px 35px 15px;
 	}
 

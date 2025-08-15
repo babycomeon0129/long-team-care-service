@@ -1,9 +1,11 @@
 <template>
-    <div class="p-home">
+    <main class="p-home">
 		<TheKv />
-    </div>
+		<ThePreface />
+    </main>
 </template>
 
 <script setup>
-import TheKv from '@/components/TheKv.vue';
+import TheKv from '@components/TheKv.vue';
+import ThePreface from '@components/ThePreface.vue';
 </script>
