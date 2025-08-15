@@ -13,8 +13,8 @@
 				@click="showNav = false"
 			/>
 			<ul class="header__list">
-				<li>首頁<span /></li>
-				<li>照顧現場<span /></li>
+				<li @click="scrollToBlock('kv')">首頁<span /></li>
+				<li @click="scrollToBlock('preface')">照顧現場<span /></li>
 				<li>一看就懂常照2.0<span /></li>
 				<li>長照地圖<span /></li>
 			</ul>
@@ -25,6 +25,7 @@
 <script setup>
 import { ref } from 'vue';
 import SvgIcon from './common/SvgIcon.vue';
+import { scrollToBlock } from '@utils/common';
 
 const showNav = ref(false);
 </script>

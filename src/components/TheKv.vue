@@ -28,7 +28,7 @@
 		</div>
 		<img
 			src="@img/icon--scroll.png"
-			@click="scrollToBlock('directions')"
+			@click="scrollToBlock('preface')"
 			class="kv__scroll for-pc"
 		/>
 	</section>
