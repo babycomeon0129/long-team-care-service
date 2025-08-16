@@ -9,4 +9,6 @@ const scrollToBlock = async (block) => {
 	});
 };
 
-export { scrollToBlock };
+const imgSrc = (imgName) => new URL(`../assets/images/${imgName}`, import.meta.url).href;
+
+export { scrollToBlock, imgSrc };

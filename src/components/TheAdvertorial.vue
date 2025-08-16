@@ -57,6 +57,7 @@
 <script setup>
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import TheTitle from './common/TheTitle.vue';
+import { imgSrc } from '@utils/common';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -86,10 +87,6 @@ const slideList = [
 		link: 'https://www.cw.com.tw/aging/article/5125789'
 	}
 ]
-
-const imgSrc = (imgName) => {
-	return new URL(`../assets/images/${imgName}`, import.meta.url).href;
-};
 
 </script>
 
@@ -209,7 +206,7 @@ const imgSrc = (imgName) => {
 	right: 21.4%;
 	width: 64px;
 	height: 64px;
-	background-image: url(@img/icon--arrow.png);
+	background-image: url(@img/swiper-arrow.png);
 	background-size: contain;
 
 	@include mobile {

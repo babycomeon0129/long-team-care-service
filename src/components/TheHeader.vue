@@ -12,10 +12,10 @@
 				class="header__burger header__burger--close for-mobile"
 				@click="showNav = false"
 			/>
-			<ul class="header__list">
+			<ul class="header__list" @click="closeMobileNav">
 				<li @click="scrollToBlock('kv')">首頁<span /></li>
 				<li @click="scrollToBlock('advertorial')">照顧現場<span /></li>
-				<li>一看就懂常照2.0<span /></li>
+				<li @click="scrollToBlock('link-out')">一看就懂常照2.0<span /></li>
 				<li>長照地圖<span /></li>
 			</ul>
 		</nav>
@@ -23,11 +23,18 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, inject } from 'vue';
 import SvgIcon from './common/SvgIcon.vue';
 import { scrollToBlock } from '@utils/common';
 
+const isMobile = inject('isMobile', false);
 const showNav = ref(false);
+
+const closeMobileNav = () => {
+	if (isMobile) {
+		showNav.value = false;
+	}
+}
 </script>
 
 <style lang="scss" scoped>

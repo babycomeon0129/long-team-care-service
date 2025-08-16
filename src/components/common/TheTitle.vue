@@ -18,6 +18,7 @@ const { preTitle, title, subTitle } = defineProps(['preTitle', 'title', 'subTitl
 	color: var(--color-deep-green);
 
 	@include pc-small {
+		margin-bottom: 24px;
 		margin-left: 130px;
 	}
 
