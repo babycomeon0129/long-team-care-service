@@ -8,7 +8,11 @@
 						<div class="map__card-list">
 							<div class="map__card">
 								<div class="map__card-img">
-									<img src="@img/map-img-1.png" class="rwdimg" alt="透過左上角篩選功能，找到適合的服務機構" />
+									<img
+										src="@img/map-img-1.png"
+										class="rwdimg" alt="透過左上角篩選功能，找到適合的服務機構"
+										loading="lazy"
+									/>
 									<SvgIcon name="map-img-1-finger" class="swing" />
 								</div>
 								<div class="map__card-tips">TIPS 1</div>
@@ -16,14 +20,24 @@
 							</div>
 							<div class="map__card">
 								<div class="map__card-img">
-									<img src="@img/map-img-2.png" class="rwdimg" alt="直接點擊地圖，定位篩選出範圍內的相關服務機構" />
+									<img
+										src="@img/map-img-2.png"
+										class="rwdimg"
+										alt="直接點擊地圖，定位篩選出範圍內的相關服務機構"
+										loading="lazy"
+									/>
 								</div>
 								<div class="map__card-tips">TIPS 2</div>
 								<div>直接點擊地圖，定位篩選出範圍內的相關服務機構</div>
 							</div>
 							<div class="map__card">
 								<div class="map__card-img">
-									<img src="@img/map-img-3.png" class="rwdimg" alt="點選下方篩選列表，觀看更詳細的聯絡資訊" />
+									<img
+										src="@img/map-img-3.png"
+										class="rwdimg"
+										alt="點選下方篩選列表，觀看更詳細的聯絡資訊"
+										loading="lazy"
+									/>
 								</div>
 								<div class="map__card-tips">TIPS 3</div>
 								<div>點選下方篩選列表，觀看更詳細的聯絡資訊</div>

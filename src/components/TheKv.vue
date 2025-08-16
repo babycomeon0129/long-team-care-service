@@ -6,10 +6,11 @@
 			data-aos="fade-up"
 			data-aos-delay="50"
 		>
-			<img src="@img/title.png" class="rwdimg" />
+			<img src="@img/title.png" class="rwdimg" alt="四個照顧現場故事，看見你的問題解方" />
 			<img
 				src="@img/title-point.png"
 				class="kv__title-point"
+				alt="讓專業的來"
 				data-aos="fade-right"
 				data-aos-delay="150"
 			/>
@@ -19,15 +20,17 @@
 			class="kv__title"
 			data-aos="fade-up"
 		>
-			<img src="@img/title-mobile.png" class="rwdimg" />
+			<img src="@img/title-mobile.png" class="rwdimg" alt="四個照顧現場故事，看見你的問題解方" />
 			<img
 				src="@img/title-point-mobile.png"
 				class="kv__title-point"
+				alt="讓專業的來"
 				data-aos="fade-right"
 			/>
 		</div>
 		<img
 			src="@img/icon--scroll.png"
+			alt="scroll"
 			@click="scrollToBlock('preface')"
 			class="kv__scroll for-pc"
 		/>

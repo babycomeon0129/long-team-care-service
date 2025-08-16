@@ -10,7 +10,12 @@
 				<div class="link-out__card-list">
 					<div class="link-out__card">
 						<div class="link-out__card-img">
-							<img src="@img/link-out-img-1.png" class="rwdimg" />
+							<img
+								src="@img/link-out-img-1.png"
+								class="rwdimg"
+								alt="服務對象"
+								loading="lazy"
+							/>
 							<div class="link-out__card-img-border" />
 						</div>
 						<h3>服務對象</h3>
@@ -18,7 +23,12 @@
 					</div>
 					<div class="link-out__card">
 						<div class="link-out__card-img">
-							<img src="@img/link-out-img-2.png" class="rwdimg" />
+							<img
+								src="@img/link-out-img-2.png"
+								class="rwdimg"
+								alt="申請流程"
+								loading="lazy"
+							/>
 							<div class="link-out__card-img-border" />
 						</div>
 						<h3>申請流程</h3>
@@ -30,7 +40,12 @@
 					</div>
 					<div class="link-out__card">
 						<div class="link-out__card-img">
-							<img src="@img/link-out-img-3.png" class="rwdimg" />
+							<img
+								src="@img/link-out-img-3.png"
+								class="rwdimg"
+								alt="服務內容"
+								loading="lazy"
+							/>
 							<div class="link-out__card-img-border" />
 						</div>
 						<h3>服務內容</h3>
@@ -42,7 +57,12 @@
 					<ButtonMore text="了解更多長照2.0" />
 				</div>
 			</div>
-			<img src="@img/bg-round.png" class="link-out__bg" />
+			<img
+				src="@img/bg-round.png"
+				class="link-out__bg"
+				alt="bg"
+				loading="lazy"
+			/>
 		</div>
 	</section>
 </template>

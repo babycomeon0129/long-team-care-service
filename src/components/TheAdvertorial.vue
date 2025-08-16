@@ -44,7 +44,11 @@
 							<div class="advertorial__slide-content" :class="{'opacity': !isActive}">
 								<h3 v-html="slide.title" />
 								<p>{{ slide.subtitle }}</p>
-								<img src="@img/slide-line.png" class="advertorial__slide-line" />
+								<img
+									src="@img/slide-line.png" class="advertorial__slide-line"
+									alt="line"
+									loading="lazy"
+								/>
 							</div>
 						</a>
 					</swiper-slide>

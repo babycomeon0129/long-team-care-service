@@ -9,12 +9,16 @@
 					v-if="!isMobile"
 					src="@img/sub-title.png"
 					class="preface__subtitle"
+					alt="long term care services"
+					loading="lazy"
 				/>
 				<h1>長照2.0，<br />讓照顧的路上有專業</h1>
 				<img
 					v-if="isMobile"
 					src="@img/sub-title-mobile.png"
 					class="preface__subtitle--mobile"
+					alt="long term care services"
+					loading="lazy"
 				/>
 				<p>台灣走向超高齡社會，速度比想像中還要快又急，隨著人口老化加速，未來需要照顧年長父母的青壯人口，只會增加，不會減少。
 				老年人壽命的延長，也表示照顧的時間會愈來愈長；甚至是在自己退休之後，仍須持續照顧長輩。
