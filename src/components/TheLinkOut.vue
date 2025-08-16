@@ -54,7 +54,7 @@
 				</div>
 				<div class="link-out__more">
 					<img src="@img/line.png" class="link-out__line for-pc" />
-					<ButtonMore text="了解更多長照2.0" />
+					<ButtonMore text="了解更多長照2.0" @click="clickBtn" />
 				</div>
 			</div>
 			<img
@@ -70,6 +70,8 @@
 <script setup lang="ts">
 import ButtonMore from './common/ButtonMore.vue';
 import TheTitle from './common/TheTitle.vue';
+
+const clickBtn = () => window.open('https://event.cw.com.tw/2023mohw/Infographic.pdf', '_blank', 'noopener,noreferrer')
 </script>
 
 <style lang="scss" scoped>

@@ -15,7 +15,7 @@
 			<ul class="header__list" @click="closeMobileNav">
 				<li @click="scrollToBlock('kv')">首頁<span /></li>
 				<li @click="scrollToBlock('advertorial')">照顧現場<span /></li>
-				<li @click="scrollToBlock('link-out')">一看就懂常照2.0<span /></li>
+				<li @click="scrollToBlock('link-out')">一看就懂長照2.0<span /></li>
 				<li @click="scrollToBlock('map')">長照地圖<span /></li>
 			</ul>
 		</nav>

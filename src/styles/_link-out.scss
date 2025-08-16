@@ -4,19 +4,25 @@
 	padding: 120px 0 38px 0;
 
 	@include mobile {
-		padding: 56px 0 24px 0;
+		padding: 56px 0;
+	}
+}
+
+.link-out__container {
+	@include mobile {
+		padding: 0 24px;
 	}
 }
 
 .link-out__bg {
 	position: absolute;
-	top: 321px;
+	top: 201px;
 	left: 50%;
 	z-index: 0;
 	transform: translateX(-50%);
 
 	@include mobile {
-		top: 261px;
+		top: 205px;
 	}
 }
 
