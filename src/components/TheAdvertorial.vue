@@ -1,6 +1,6 @@
 <template>
 	<section class="advertorial">
-		<div class="advertorial__container container" data-aos="fade-up">
+		<div class="advertorial__container container">
 			<TheTitle
 				preTitle="照顧現場"
 				title="預見安心變老"

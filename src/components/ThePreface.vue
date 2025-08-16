@@ -37,21 +37,28 @@ const isMobile = inject('isMobile', false);
 </script>
 
 <style lang="scss" scoped>
+.preface {
+	padding: 120px 0 56px 0;
+
+	@include mobile {
+		padding: 56px 0 96px 0;
+	}
+}
 .preface__container {
 	display: grid;
-	grid-template-columns: 376px 430px;
+	grid-template-columns: 406px 430px;
 	column-gap: 130px;
-	padding: 120px 21% 56px 12%;
+	padding: 0 300px 0 175px;
 
 	@include pc-small {
 		grid-template-columns: 1fr 1.2fr;
 		column-gap: 100px;
-		padding: 120px 5% 28px 5%;
+		padding: 0 5%;
 	}
 
 	@include mobile {
 		grid-template-columns: 1fr;
-		padding: 56px 24px 80px 24px;
+		padding: 0 24px;
 	}
 }
 
@@ -81,6 +88,14 @@ const isMobile = inject('isMobile', false);
 			letter-spacing: .24rem;
 		}
 	}
+
+	p {
+		margin: 16px 0 0 0;
+
+		@include mobile {
+			margin: 0;
+		}
+	}
 }
 
 .preface__subtitle {
@@ -103,7 +118,7 @@ const isMobile = inject('isMobile', false);
 	background-color: var(--color-green);
 
 	@include mobile {
-		bottom: -24px;
+		bottom: -38px;
 	}
 
 	&::before {

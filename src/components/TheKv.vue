@@ -1,5 +1,5 @@
 <template>
-	<section class="kv">
+	<section class="kv" :style="{ height: `${height}px` }">
 		<div
 			v-if="!isMobile"
 			class="kv__title"
@@ -19,13 +19,19 @@
 			v-else
 			class="kv__title"
 			data-aos="fade-up"
+			data-aos-offset="0"
 		>
-			<img src="@img/title-mobile.png" class="rwdimg" alt="四個照顧現場故事，看見你的問題解方" />
+			<img
+				src="@img/title-mobile.png"
+				class="rwdimg"
+				alt="四個照顧現場故事，看見你的問題解方"
+			/>
 			<img
 				src="@img/title-point-mobile.png"
 				class="kv__title-point"
 				alt="讓專業的來"
 				data-aos="fade-right"
+				data-aos-offset="0"
 			/>
 		</div>
 		<img
@@ -40,15 +46,16 @@
 <script setup lang="ts">
 import { inject } from 'vue';
 import { scrollToBlock } from '@utils/common';
+import { useWindowSize } from '@vueuse/core';
 
 const isMobile = inject('isMobile', false);
+const { height } = useWindowSize();
 </script>
 
 <style lang="scss" scoped>
 .kv {
 	position: relative;
 	width: 100%;
-	height: 100vh;
 	background-image: url(@img/KV.png);
 	background-position: bottom;
 	background-size: cover;
