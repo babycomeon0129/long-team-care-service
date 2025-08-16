@@ -1,14 +1,10 @@
 @use '@style/base/mixins' as *;
 
 .link-out {
-	overflow-x: hidden;
-}
-
-.link-out__container {
 	padding: 120px 0 38px 0;
 
 	@include mobile {
-		padding: 56px 24px;
+		padding: 56px 0 24px 0;
 	}
 }
 

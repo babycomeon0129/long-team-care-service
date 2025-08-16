@@ -36,7 +36,7 @@ const { text } = defineProps(['text'])
 	&:hover {
 		&::before {
 			left: calc(100% - 64px);
-			transition: left .8s ease;
+			transition: left .3s linear;
 
 			@include mobile {
 				left: calc(100% - 48px);
@@ -46,7 +46,7 @@ const { text } = defineProps(['text'])
 		.button-more__arrow {
 			background: url("@img/button-arrow-hover.png") no-repeat center;
 			background-size: contain;
-			transition: background .3s ease .8s;
+			transition: background .1s linear .3s;
 		}
 	}
 
@@ -71,7 +71,7 @@ const { text } = defineProps(['text'])
 		z-index: 1;
 		background-color: var(--color-orange);
 		transform: translateX(0);
-		transition: left .8s ease;
+		transition: left .3s linear;
 
 		@include mobile {
 			left: -48px;
@@ -79,7 +79,7 @@ const { text } = defineProps(['text'])
 	}
 
 	&::after {
-		right: 0;
+		right: 0px;
 		background-color: var(--color-green);
 	}
 
@@ -107,7 +107,7 @@ const { text } = defineProps(['text'])
 	background: url("@img/button-arrow.png") no-repeat center;
 	background-size: contain;
 	transform: translateX(-50%) translateY(50%);
-	transition: background .3s ease;
+	transition: background .3s linear;
 
 	@include mobile {
 		width: 24px;
