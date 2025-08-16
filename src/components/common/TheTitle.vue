@@ -18,7 +18,7 @@ const { preTitle, title, subTitle } = defineProps(['preTitle', 'title', 'subTitl
 	color: var(--color-deep-green);
 
 	@include pc-small {
-		margin-bottom: 24px;
+		margin-bottom: 33px;
 		margin-left: 130px;
 	}
 
@@ -31,7 +31,7 @@ const { preTitle, title, subTitle } = defineProps(['preTitle', 'title', 'subTitl
 		font-size: 4rem;
 		font-weight: bold;
 		line-height: 1.3;
-		letter-spacing: .2em;
+		letter-spacing: .8rem;
 
 		@include mobile {
 			margin-bottom: 16px;
@@ -52,14 +52,13 @@ const { preTitle, title, subTitle } = defineProps(['preTitle', 'title', 'subTitl
 		font-size: 1.4rem;
 		font-weight: 700;
 		line-height: 1;
-		letter-spacing: .22em;
+		letter-spacing: .42rem;
 		white-space: nowrap;
 		transform: translate(-24px, 8px) rotate(90deg);
 		transform-origin: top left;
 
 		@include mobile {
 			position: static;
-			margin: 0 0 24px 0;
 			font-size: 1.2rem;
 			transform: translate(0, 0) rotate(0);
 		}

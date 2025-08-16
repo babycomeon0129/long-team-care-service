@@ -67,7 +67,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-const modules = [Navigation, Pagination, Autoplay];
+const modules = [Navigation, Pagination];
 const slideList = [
 	{
 		id:'slide-1',
@@ -95,11 +95,20 @@ const slideList = [
 </script>
 
 <style lang="scss" scoped>
-.advertorial__container {
-	padding: 120px 0 0 40px;
+
+.advertorial {
+	padding-top: 120px;
 
 	@include mobile {
-		padding: 56px 0 56px 24px;
+		padding: 56px 0;
+	}
+}
+
+.advertorial__container {
+	padding-left: 40px;
+
+	@include mobile {
+		padding-left: 24px;
 	}
 }
 
@@ -146,12 +155,13 @@ const slideList = [
 		margin: 8px 0 23px 0;
 		font-size: 1.6rem;
 		line-height: 1.6;
-		letter-spacing: .1em;
+		letter-spacing: .16rem;
 		white-space: nowrap;
 
 		@include mobile {
 			min-height: 44.78px;
 			font-size: 1.4rem;
+			letter-spacing: .14rem;
 			white-space: wrap;
 		}
 	}
@@ -177,6 +187,10 @@ const slideList = [
 	}
 }
 
+.advertorial__slide-image {
+	line-height: 0;
+}
+
 :deep(.swiper-pagination-bullets) {
 	bottom: 59px;
 	left: 180px;
@@ -195,6 +209,7 @@ const slideList = [
 
 :deep(.swiper-pagination-bullet) {
 	border: 1px solid var(--color-green);
+	background-color: transparent;
 }
 
 :deep(.swiper-pagination-bullet-active) {
