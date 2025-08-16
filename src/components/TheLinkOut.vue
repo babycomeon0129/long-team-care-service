@@ -1,11 +1,11 @@
 <template>
 	<section class="link-out">
+		<TheTitle
+			preTitle="5分鐘一看就懂"
+			title="長照2.0"
+			subTitle="LTCS Knowledge"
+		/>
 		<div class="link-out__container container">
-			<TheTitle
-				preTitle="5分鐘一看就懂"
-				title="長照2.0"
-				subTitle="LTCS Knowledge"
-			/>
 			<div class="link-out__wrapper">
 				<div class="link-out__card-list">
 					<div class="link-out__card">

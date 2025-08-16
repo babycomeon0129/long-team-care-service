@@ -23,7 +23,7 @@ const { preTitle, title, subTitle } = defineProps(['preTitle', 'title', 'subTitl
 	}
 
 	@include mobile {
-		margin-left: 0;
+		margin-left: 24px;
 	}
 
 	> h1 {
