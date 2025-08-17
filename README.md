@@ -38,6 +38,6 @@ npm run build
 npm run lint
 ```
 
-## figma
+## url
 
-[Figma](https://www.figma.com/design/irN6QgfleXka7APeBssk46/%E9%95%B7%E7%85%A7%E5%8F%B8_%E5%88%87%E7%89%88?node-id=201-34&p=f&t=FiS6sisQar8FTbxp-0)
+[長照司 2.0 試做](https://babycomeon0129.github.io/long-term-care-service/)
