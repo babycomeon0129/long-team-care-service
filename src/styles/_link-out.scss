@@ -1,7 +1,7 @@
 @use '@style/base/mixins' as *;
 
 .link-out {
-	padding: 120px 0 38px 0;
+	padding: 120px 0 36px 0;
 
 	@include mobile {
 		padding: 56px 0;
@@ -16,13 +16,13 @@
 
 .link-out__bg {
 	position: absolute;
-	top: 96px;
+	top: 227px;
 	left: 50%;
 	z-index: 0;
 	transform: translateX(-50%);
 
 	@include mobile {
-		top: 84px;
+		top: 200px;
 	}
 }
 
@@ -189,7 +189,8 @@
 
 .link-out__more {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
+	margin-top: 24px;
 
 	@include mobile {
 		justify-content: center;
@@ -197,7 +198,11 @@
 }
 
 .link-out__line {
-	transform: translateY(calc(100% - 5px));
+	position: absolute;
+	bottom: -36px;
+	left: 0;
+	width: 430px;
+	height: 36px;
 }
 
 @keyframes spin {

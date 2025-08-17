@@ -1,11 +1,11 @@
 <template>
 	<section class="advertorial">
-		<TheTitle
-			preTitle="照顧現場"
-			title="預見安心變老"
-			subTitle="LTCS LIVE"
-		/>
 		<div class="advertorial__container container">
+			<TheTitle
+				preTitle="照顧現場"
+				title="預見安心變老"
+				subTitle="LTCS LIVE"
+			/>
 			<div class="advertorial__slide">
 				<swiper
 					:modules="modules"

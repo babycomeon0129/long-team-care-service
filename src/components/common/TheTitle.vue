@@ -13,8 +13,9 @@ const { preTitle, title, subTitle } = defineProps(['preTitle', 'title', 'subTitl
 
 .title {
 	position: relative;
+	max-width: 1440px;
 	margin-bottom: 32px;
-	margin-left: 180px;
+	margin-left: 267px;
 	color: var(--color-deep-green);
 
 	@include pc-small {
@@ -23,7 +24,7 @@ const { preTitle, title, subTitle } = defineProps(['preTitle', 'title', 'subTitl
 	}
 
 	@include mobile {
-		margin-left: 24px;
+		margin-left: 0;
 	}
 
 	> h1 {

@@ -1,11 +1,12 @@
 <template>
 	<section class="map">
-		<TheTitle
-			pre-title="長照地圖"
-			title="厝邊好朋友"
-			sub-title="LTCS MAP"
-		/>
 		<div class="map__container container">
+			<TheTitle
+				pre-title="長照地圖"
+				title="厝邊好朋友"
+				sub-title="LTCS MAP"
+				class="map__title"
+			/>
 			<div class="map__wrapper">
 				<Transition name="fade">
 					<div v-if="!showMap" class="map__wrapper-content">
@@ -88,6 +89,12 @@ const showMap = ref(false);
 
 	@include mobile {
 		padding: 0;
+	}
+}
+
+.map__title {
+	@include mobile {
+		margin-left: 24px;
 	}
 }
 
