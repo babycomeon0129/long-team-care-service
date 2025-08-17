@@ -53,7 +53,7 @@
 					</div>
 				</div>
 				<div class="link-out__more">
-					<img src="@img/line.png" class="link-out__line for-pc" />
+					<img src="@img/line.png" class="link-out__line for-pc" alt="line" />
 					<ButtonMore text="了解更多長照2.0" @click="clickBtn" />
 				</div>
 			</div>

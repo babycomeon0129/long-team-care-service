@@ -1,6 +1,6 @@
 <template>
 	<header>
-		<img src="@img/logo.png" class="header__logo" />
+		<img src="@img/logo.png" class="header__logo" alt="logo" />
 		<SvgIcon
 				name="icon--burger"
 				class="header__burger for-mobile"

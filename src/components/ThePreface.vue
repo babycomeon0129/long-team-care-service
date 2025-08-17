@@ -2,7 +2,7 @@
 	<section class="preface">
 		<div class="preface__container container">
 			<div v-if="!isMobile" class="preface__image" data-aos="fade-right">
-				<img src="@img/directions.png" class="rwdimg"/>
+				<img src="@img/directions.png" class="rwdimg" alt="長照2.0，讓照顧的路上有專業"/>
 			</div>
 			<div class="preface__content" :data-aos="isMobile ? 'fade-up' : 'fade-left'">
 				<img
