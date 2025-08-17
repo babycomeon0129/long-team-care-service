@@ -1,6 +1,6 @@
 <template>
 	<footer>
-		Copyright © 2023 天下數位發展部及整合傳播部企劃製作  All rights reserved. <br class="for-pc"/>
+		Copyright © 2023 天下數位發展部及整合傳播部企劃製作 <br class="for-mobile" />All rights reserved. <br class="for-pc"/>
 		版權所有，禁止擅自轉貼節錄<br/>
 		<a>隱私權政策</a>
 	</footer>

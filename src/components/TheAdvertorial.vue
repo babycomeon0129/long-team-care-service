@@ -67,7 +67,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-const modules = [Navigation, Pagination];
+const modules = [Navigation, Pagination, Autoplay];
 const slideList = [
 	{
 		id:'slide-1',

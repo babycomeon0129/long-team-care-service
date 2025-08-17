@@ -1,5 +1,5 @@
 <template>
-	<section class="kv" :style="{ height: `${height}px` }">
+	<section class="kv" :style="{'--vh': `${vh}px`}">
 		<div
 			v-if="!isMobile"
 			class="kv__title"
@@ -44,18 +44,26 @@
 </template>
 
 <script setup lang="ts">
-import { inject } from 'vue';
+import { inject, onMounted, ref } from 'vue';
 import { scrollToBlock } from '@utils/common';
-import { useWindowSize } from '@vueuse/core';
 
 const isMobile = inject('isMobile', false);
-const { height } = useWindowSize();
+const vh = ref(0);
+
+const setVh = () => {
+	vh.value = (window.visualViewport?.height ?? window.innerHeight) * 0.01;
+}
+
+onMounted(() => {
+	setVh();
+});
 </script>
 
 <style lang="scss" scoped>
 .kv {
 	position: relative;
 	width: 100%;
+	height: calc(var(--vh, 1vh) * 100);
 	background-image: url(@img/KV.png);
 	background-position: bottom;
 	background-size: cover;
