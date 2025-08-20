@@ -108,6 +108,7 @@ const slideList = [
 	padding-left: 40px;
 
 	@include mobile {
+		padding-right: 0;
 		padding-left: 24px;
 	}
 }
