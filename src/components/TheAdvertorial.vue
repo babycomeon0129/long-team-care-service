@@ -106,9 +106,9 @@ const slideList = [
 
 .advertorial__container {
 	padding-left: 40px;
+	padding-right: 0;
 
 	@include mobile {
-		padding-right: 0;
 		padding-left: 24px;
 	}
 }
